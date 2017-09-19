@@ -1,0 +1,162 @@
+
+<include file="Index:header" />
+<body>
+<style type="text/css">
+.layui-nav-tree .layui-this{background-color: #393D49;color: #fff;}
+</style>
+<div class="header">
+  <div class="main">
+    <a href="{:U('index/index')}" title=""  class="my-header-logo"><i class="layui-icon" style="font-size: 28px; color:#009688">&#xe632;</i> 后台管理</a>
+
+		<ul class="layui-nav" lay-filter="" >
+		  <!-- 	
+		  <li class="layui-nav-item"><a href="">最新活动</a></li>
+		  <li class="layui-nav-item layui-this"><a href="">产品</a></li>
+		  <li class="layui-nav-item"><a href="">大数据</a></li>
+		  -->
+		  <li class="layui-nav-item">
+			<a href="javascript:;">{:session('username')}</a>
+			<dl class="layui-nav-child"> <!-- 二级菜单 -->
+			  <dd><a class="update_cache">清理缓存</a></dd>
+			  <dd><a class="logi_logout" href="javascript:void(0)">退出</a></dd>
+			</dl>
+		  </li>
+		</ul>
+
+  </div>
+</div>
+
+<div class="main fly-user-main layui-clear">
+<ul class="layui-nav layui-nav-tree left_menu_ul" lay-filter="side-top-left">
+	<volist name="menu" id="vo">
+	<li class="layui-nav-item layui-nav-itemed">
+    <a href="javascript:;"><i class="layui-icon">{$vo.icon}</i>{$vo.tit}</a>
+    <dl class="layui-nav-child">
+	  	<volist name="vo.sub" id="sub">	
+		  <dd><a href-url="{$sub.url}" target="main">{$sub.tit}</a></dd>
+	   </volist>
+    </dl>
+    </li>
+   </volist>
+	
+</ul>
+</div>
+
+<div class="layui-body my-body iframe-container">	
+<div class="layui-tab layui-tab-card my-tab " lay-filter="card" lay-allowclose="true">
+  <ul class="layui-tab-title">
+    <li class="layui-this" lay-id="1">首页</li>
+    
+  </ul>
+  <div class="layui-tab-content">
+    <div class="layui-tab-item layui-show">
+	<iframe class="admin-iframe" id="admin-iframe" name="main" src="{:U('index/home')}"></iframe>
+	</div>
+   
+  </div>
+</div>
+
+</div>
+<script type="text/javascript">
+layui.use(['layer', 'element','jquery'], function(){
+  var layer = layui.layer
+  ,element = layui.element()
+  ,jq = layui.jquery;
+  
+  
+  
+  
+  jq('.left_menu_ul .layui-nav-item').click(function(){
+    jq('.left_menu_ul .layui-nav-item').removeClass('layui-this');
+    jq(this).addClass('layui-this');
+    jq("#iframe-mask").show();
+    jq("#admin-iframe").load(function(){   
+      jq("#iframe-mask").fadeOut(100);
+    });
+  });
+
+  jq('.update_cache').click(function(){
+    loading = layer.load(2, {
+      shade: [0.2,'#000']
+    });
+    jq.getJSON('{:U("index/update")}',function(data){
+      if(data.code == 200){
+        layer.close(loading);
+        layer.msg(data.msg, {icon: 1, time: 1000}, function(){
+          location.reload();
+        });
+      }else{
+        layer.close(loading);
+        layer.msg(data.msg, {icon: 2, anim: 6, time: 1000});
+      }
+    });
+  });
+
+  jq('.logi_logout').click(function(){
+    loading = layer.load(2, {
+      shade: [0.2,'#000']
+    });
+    jq.getJSON('{:U("login/logout")}',function(data){
+      if(data.code == 200){
+        layer.close(loading);
+        layer.msg(data.msg, {icon: 1, time: 1000}, function(){
+          location.reload();
+        });
+      }else{
+        layer.close(loading);
+        layer.msg(data.msg, {icon: 2, anim: 6, time: 1000});
+      }
+    });
+  });
+  
+  
+    // 监听顶部左侧导航
+    element.on('nav(side-top-left)', function (elem) {
+        console.log(elem);
+        // 添加tab方法
+        window.addTab(elem);
+    });
+	
+	  // 根据导航栏text获取lay-id
+    function getTitleId(card, title) {
+        var id = -1;
+        $(document).find(".layui-tab[lay-filter=" + card + "] ul li").each(function () {
+            if (title === $(this).find('span').html()) {
+                id = $(this).attr('lay-id');
+            }
+        });
+        return id;
+    };
+
+    // 添加TAB选项卡
+    window.addTab = function (elem, tit, url) {
+        var card = 'card';                                           // 选项卡对象
+        var title = tit ? tit : elem.children('a').html();            // 导航栏text
+        var src = url ? url : elem.children('a').attr('href-url');  // 导航栏跳转URL
+        var id = new Date().getTime();                             // ID
+        var flag = getTitleId(card, title);                          // 是否有该选项卡存在
+        // 大于0就是有该选项卡了
+        if (flag > 0) {
+            id = flag;
+        } else {
+            if (src) {
+                //新增
+                element.tabAdd(card, {
+                    title: '<span>' + title + '</span>'
+                    , content: '<iframe class="admin-iframe" id="admin-iframe" name="main" src="' + src + '"></iframe>'
+                    , id: id
+                });
+                // 关闭弹窗
+                layer.closeAll();
+            }
+        }
+        // 切换相应的ID tab
+        element.tabChange(card, id);
+        // 提示信息
+        // layer.msg(title);
+    };
+});
+</script>
+<include file="Index:footer" />
+</body>
+</html>

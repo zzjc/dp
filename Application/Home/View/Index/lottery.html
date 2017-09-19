@@ -1,0 +1,123 @@
+﻿<include file="Index:header" />
+	<body>
+		<!-------------------------------------- 头部开始 -------------------------------------->
+		<header>
+			<div class="container">
+				
+			</div>
+		</header>
+		<!-------------------------------------- 头部结束 -------------------------------------->
+		<!-------------------------------------- 内容开始 -------------------------------------->
+		<main>
+			<div class="container">
+				<div class="ui-userhead">
+					<div class="img">
+						<img src="{$Think.session.headimgurl}" alt="">
+						<p>{$Think.session.nickname} </p>
+					</div>
+					<div class="txt">
+						<div class="coin">
+							<p>拥有环保星星<em id="point">{$point}</em>个</p>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="ui-tabs">
+					<ul>
+						<li><a href="javascript:void(0)" class="i on"><i class="ico1"></i>抽奖</a></li>
+						<li><a href="{:U('index/exchange')}" class="i"><i class="ico2"></i>兑奖</a></li>
+						<div class="clearfix"></div>
+					</ul>
+				</div>
+				<div class="ht05 bg-gray"></div>
+				<div class="ht10"></div>
+				<div class="ui-game">
+					<div class="game">
+						<div class="ui-draw">
+							<a href="javascript:void(0)" class="go"><i></i>
+								<span>点击<br>抽奖</span>
+							</a>
+							<volist name="list" id="vo">
+							<img src="{$vo.pic}" alt="{$vo.title}" style="{$prizeArr.$key}">
+							</volist>
+							
+						</div>
+					</div>
+					<div class="text">
+						<div class="hd">
+							<p><img src="{:C('STATIC_URL')}Public/home/img/label-l1.png" alt=""></p>
+						</div>
+						<div class="ct">
+							<p>1、每次抽奖会消耗掉3颗环保星星，每天可凭环保星星抽奖1次，用户分享1次最多可获得1次抽奖机会；</p>
+							<p>2、活动时间2017年7月1日至2018年7月1日；</p>
+							<p>3、奖品领取方式以主办方的具体通知为准；</p>
+							<p>4、本次活动的最终解释权归主办方所有；</p>
+							<p>5、最终中奖礼品可能会在颜色和小细节等部分存在差异，具体以实物为准，奖品数量有限兑完即止。</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<!-------------------------------------- 内容结束 -------------------------------------->
+		<!-------------------------------------- 尾部开始 -------------------------------------->
+		<footer>
+			<div class="container">
+				
+			</div>
+		</footer>
+		<include file="Common/wx_jssdk" />
+		<!-------------------------------------- 尾部开始 -------------------------------------->
+	</body>
+</html>
+<style>
+	
+</style>
+<script>
+	$(function(){
+		$('.ui-draw .go').on('click', function(){
+			var url = "{:U('index/ajaxLottery')}";
+			$.post(url, function(data){
+					console.log(data);
+					$('#point').html(data.point);
+					if(data.code == 200){ 
+						$('.ui-draw').addClass('on');
+						var t=1800+data.deg;
+						$('.ui-draw.on .go >i').css({
+						  '-webkit-transition': 'transform 3s',
+						  '-o-transition': 'transform 3s',
+						  'transition': 'transform 3s',
+						  '-webkit-transform': 'rotate('+t+'deg)',
+						  '-o-transform': 'rotate('+t+'deg)',
+						  'transform': 'rotate('+t+'deg)',
+						});
+						
+						if(data.is_winning==2){
+							var btnMsg = '确定';
+							var content = data.prizename;
+						}else{
+							var content = '恭喜你抽中了'+data.prizename;
+							var btnMsg = '去领取';
+						}
+						setTimeout(function(){
+						  $('.ui-draw').removeClass('on');
+						     layer.open({
+								content: content,
+								btn: btnMsg,
+								yes: function(index){
+								   location.href = data.backurl;
+								}
+							  });
+							}, 3000);
+
+					}else{
+						layerAlert(data.msg);
+						return false;
+					}
+			 },"json");
+			 
+			 
+			
+			return false;
+		  });
+	});
+</script>

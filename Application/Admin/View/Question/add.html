@@ -1,0 +1,198 @@
+<include file="Index:header" />
+<body>
+<div class="fly-panel fly-panel-user">
+<div class="tpt—admin">
+<form class="layui-form">
+  <input type="hidden" name="id" value="{$info.id}">
+  <input type="hidden" name="act" value="{$act}">
+  <div class="layui-form-item">
+    <label class="layui-form-label">题目</label>
+    <div class="layui-input-block">
+      <input type="text" name="title" value="{$info['title']}" required lay-verify="required" placeholder="请输入内容" autocomplete="off" class="layui-input">
+    </div>
+  </div>
+ <div class="layui-form-item">
+    <label class="layui-form-label">月份</label>
+    <div class="layui-input-block" style="width: 100px;">
+       <select name="month" lay-verify="required" lay-search="">
+          <option value="">全部</option>
+          <option value="1"  <if condition="$info.month eq 1">selected</if>>1月</option>
+          <option value="2"  <if condition="$info.month eq 2">selected</if>>2月</option>
+          <option value="3"  <if condition="$info.month eq 3">selected</if>>3月</option>
+          <option value="4"  <if condition="$info.month eq 4">selected</if>>4月</option>
+          <option value="5"  <if condition="$info.month eq 5">selected</if>>5月</option>
+          <option value="6"  <if condition="$info.month eq 6">selected</if>>6月</option>
+          <option value="7"  <if condition="$info.month eq 7">selected</if>>7月</option>
+          <option value="8"  <if condition="$info.month eq 8">selected</if>>8月</option>
+          <option value="9"  <if condition="$info.month eq 9">selected</if>>9月</option>
+          <option value="10"  <if condition="$info.month eq 10">selected</if>>10月</option>
+          <option value="11"  <if condition="$info.month eq 11">selected</if>>11月</option>
+          <option value="12"  <if condition="$info.month eq 12">selected</if>>12月</option>
+        </select>
+    </div>
+  </div>
+
+  <div class="layui-form-item">
+    <label class="layui-form-label">图片</label>
+    <div class="layui-input-block">
+		<notempty name="info.pic">
+		  <img src="{$info.pic}"  width="100" id="showpic" >
+		<else/>
+		    <img src=""  width="100" id="showpic" style="display:none;">
+		</notempty>
+	  <input type="file" name="file" class="layui-upload-file" id="image" style="float: left;">
+	  <input type="hidden" name="pic" value="{$info.pic}">
+    </div>
+  </div>
+
+  <div class="layui-form-item">
+     <div class="layui-inline">
+      <label class="layui-form-label">答案A</label>
+      <div class="layui-input-inline">
+        <input type="text" name="section1" value="{$info.section1}"  lay-verify="section1" autocomplete="off" class="layui-input">
+      </div>
+    </div>
+	<!--
+    <div class="layui-inline">
+      <label class="layui-form-label">解析</label>
+      <div class="layui-input-inline">
+        <input type="text" name="explain1" value="{$info.explain1}"  lay-verify="explain1" autocomplete="off" class="layui-input">
+      </div>
+    </div>
+	-->
+  </div>
+  <div class="layui-form-item">
+     <div class="layui-inline">
+      <label class="layui-form-label">答案B</label>
+      <div class="layui-input-inline">
+        <input type="text" name="section2" value="{$info.section2}"  lay-verify="section2" autocomplete="off" class="layui-input">
+      </div>
+    </div>
+	<!--
+    <div class="layui-inline">
+      <label class="layui-form-label">解析</label>
+      <div class="layui-input-inline">
+        <input type="text" name="explain2" value="{$info.explain2}"  lay-verify="explain2" autocomplete="off" class="layui-input">
+      </div>
+    </div>
+	-->
+  </div>
+  <div class="layui-form-item">
+     <div class="layui-inline">
+      <label class="layui-form-label">答案C</label>
+      <div class="layui-input-inline">
+        <input type="text" name="section3" value="{$info.section3}"  lay-verify="section3" autocomplete="off" class="layui-input">
+      </div>
+    </div>
+	<!--
+    <div class="layui-inline">
+      <label class="layui-form-label">解析</label>
+      <div class="layui-input-inline">
+        <input type="text" name="explain3" value="{$info.explain3}"  lay-verify="explain3" autocomplete="off" class="layui-input">
+      </div>
+    </div>
+	-->
+  </div>
+  <div class="layui-form-item">
+     <div class="layui-inline">
+      <label class="layui-form-label">答案D</label>
+      <div class="layui-input-inline">
+        <input type="text" name="section4" value="{$info.section4}"  lay-verify="section4" autocomplete="off" class="layui-input">
+      </div>
+    </div>
+	<!--
+    <div class="layui-inline">
+      <label class="layui-form-label">解析</label>
+      <div class="layui-input-inline">
+        <input type="text" name="explain4" value="{$info.explain4}"  lay-verify="explain4" autocomplete="off" class="layui-input">
+      </div>
+    </div>
+	-->
+  </div>
+   <div class="layui-form-item">
+    <label class="layui-form-label">正确答案</label>
+    <div class="layui-input-block" style="width: 100px;">
+       <select name="answer" lay-verify="required" lay-search="">
+          <option value="1"  <if condition="$info.answer eq 1">selected</if>>A</option>
+          <option value="2"  <if condition="$info.answer eq 2">selected</if>>B</option>
+          <option value="3"  <if condition="$info.answer eq 3">selected</if>>C</option>
+          <option value="4"  <if condition="$info.answer eq 4">selected</if>>D</option>
+        
+        </select>
+    </div>
+  </div>
+  <div class="layui-form-item layui-form-text">
+    <label class="layui-form-label">你知道吗</label>
+    <div class="layui-input-block">
+      <textarea placeholder="请输入内容" class="layui-textarea" name="knowledge">{$info.knowledge} </textarea>
+    </div>
+	<div class="layui-form-mid layui-word-aux"></div>
+  </div>
+  <div class="layui-form-item">
+    <label class="layui-form-label">文章标题</label>
+    <div class="layui-input-block">
+      <input type="text" name="explain_title" value="{$info['explain_title']}" placeholder="请输入标题" autocomplete="off" class="layui-input">
+    </div>
+  </div>
+  <div class="layui-form-item">
+    <label class="layui-form-label">文章链接</label>
+    <div class="layui-input-block">
+      <input type="text" name="explain_link" value="{$info['explain_link']}"  placeholder="请输入链接" autocomplete="off" class="layui-input">
+    </div>
+  </div>  
+  <div class="layui-form-item">
+    <div class="layui-input-block">
+	  <button class="layui-btn" lay-submit="" lay-filter="submit_add">立即提交</button>
+      <button class="layui-btn layui-btn-primary" onclick="history.go(-1)">返回</button>
+    </div>
+  </div>
+
+</form>
+<script>
+layui.use(['form', 'upload'],function(){
+  var form = layui.form()
+  ,jq = layui.jquery;
+  
+  layui.upload({
+    url: '{:U("Action/upload")}'
+    ,elem:'#image'
+    ,before: function(input){
+      loading = layer.load(2, {
+        shade: [0.2,'#000']
+      });
+    }
+    ,success: function(res){
+      layer.close(loading);
+	  var picurl = '/upload/'+res.path;
+      jq('input[name=pic]').val(picurl);
+	  $('#showpic').attr('src',picurl).show();
+      layer.msg(res.message, {icon: 1, time: 1000});
+    }
+  }); 
+  
+  form.on('submit(submit_add)', function(data){
+    loading = layer.load(2, {
+      shade: [0.2,'#000']
+    });
+    var param = data.field;
+    jq.post('{:U("question/add")}',param,function(data){
+      if(data.code == 200){
+        layer.close(loading);
+        layer.msg(data.msg, {icon: 1, time: 1000}, function(){
+          location.href = data.backurl;
+        });
+      }else{
+        layer.close(loading);
+        layer.msg(data.msg, {icon: 2, anim: 6, time: 1000});
+      }
+    });
+    return false;
+  });
+
+})
+</script>
+</div>
+</div>
+<include file="Index:footer" />
+</body>
+</html>

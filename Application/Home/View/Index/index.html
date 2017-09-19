@@ -1,0 +1,54 @@
+﻿<include file="Index:header" />
+	<body class="bg-home full-height">
+		<!-------------------------------------- 头部开始 -------------------------------------->
+		<header>
+			<div class="container">
+				
+			</div>
+		</header>
+		<!-------------------------------------- 头部结束 -------------------------------------->
+		<!-------------------------------------- 内容开始 -------------------------------------->
+		<main>
+			<div class="container">
+				<div class="ui-head">
+					<p>
+			
+					</p>
+				</div>
+				<div class="ui-home">
+					<p><a href="{:U("index/rule")}"><img src="{:C('STATIC_URL')}Public/home/img/label-l3.png" alt=""></a></p>
+					<div class="ht50"></div>
+					<p><a href="{:U("index/start",array('month'=>$month))}" class="bt-1">答题赢礼品</a></p>
+				</div>
+				<div class="ui-foot">
+					<p>坪山街道办出品</p>
+					<p>易联创想提供技术自持</p>
+				</div>
+			</div>
+
+			
+		</main>
+		<!-------------------------------------- 内容结束 -------------------------------------->
+		<!-------------------------------------- 尾部开始 -------------------------------------->
+		<footer>
+			<div class="container">
+				
+			</div>
+		</footer>
+		<include file="Common/wx_jssdk" />
+		<!-------------------------------------- 尾部开始 -------------------------------------->
+	</body>
+</html>
+<style>
+	
+</style>
+<script>
+	$(function(){
+		$('#showrule').click(function(){
+			$('body').addClass('on-mask');
+			$('.ui-role').show();
+			return false;
+		  });
+  
+	});
+</script>

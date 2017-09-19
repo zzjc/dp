@@ -1,0 +1,303 @@
+/*----------bootstrap reset----------*/
+.form-control:focus{
+  border-color: #ccc;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: inset none;
+}
+ul,
+ol{
+  padding-left: 0;
+  margin-bottom: 0;
+}
+li{
+  list-style: none;
+}
+label{
+  font-weight: normal;
+  margin-bottom: 0;
+}
+:focus{
+  outline: none;
+}
+
+/*----------bootstrap extra----------*/
+body{
+
+}
+.extra-width{
+  display: block;
+  width: 115%;
+}
+.nobt{
+  border-top: none;
+}
+.nobr{
+  border-right: none;
+}
+.nobb{
+  border-bottom: none;
+}
+.nobl{
+  border-left: none;
+}
+.ht05{
+  height: .5rem;
+}
+.ht10{
+  height: 1.0rem;
+}
+.ht15{
+  height: 1.5rem;
+}
+.ht20{
+  height: 2.0rem;
+}
+.ht25{
+  height: 2.5rem;
+}
+.ht30{
+  height: 3.0rem;
+}
+.ht35{
+  height: 3.5rem;
+}
+.ht40{
+  height: 4.0rem;
+}
+.ht45{
+  height: 4.5rem;
+}
+.ht50{
+  height: 5.0rem;
+}
+.ht55{
+  height: 5.5rem;
+}
+.ht60{
+  height: 6.0rem;
+}
+.ht65{
+  height: 6.5rem;
+}
+.ht70{
+  height: 7.0rem;
+}
+.ht75{
+  height: 7.5rem;
+}
+.ht80{
+  height: 8.0rem;
+}
+.ht85{
+  height: 8.5rem;
+}
+.ht90{
+  height: 9.0rem;
+}
+.ht95{
+  height: 9.5rem;
+}
+.ht100{
+  height: 10.0rem;
+}
+.wh05{
+  display: inline-block;
+  width: .5rem;
+}
+.wh10{
+  display: inline-block;
+  width: 1.0rem;
+}
+.wh15{
+  display: inline-block;
+  width: 1.5rem;
+}
+.wh20{
+  display: inline-block;
+  width: 2.0rem;
+}
+.wh25{
+  display: inline-block;
+  width: 2.5rem;
+}
+.wh30{
+  display: inline-block;
+  width: 3.0rem;
+}
+.wh35{
+  display: inline-block;
+  width: 3.5rem;
+}
+.wh40{
+  display: inline-block;
+  width: 4.0rem;
+}
+.wh45{
+  display: inline-block;
+  width: 4.5rem;
+}
+.wh50{
+  display: inline-block;
+  width: 5.0rem;
+}
+.wh55{
+  display: inline-block;
+  width: 5.5rem;
+}
+.wh60{
+  display: inline-block;
+  width: 6.0rem;
+}
+.wh65{
+  display: inline-block;
+  width: 6.5rem;
+}
+.wh70{
+  display: inline-block;
+  width: 7.0rem;
+}
+.wh75{
+  display: inline-block;
+  width: 7.5rem;
+}
+.wh80{
+  display: inline-block;
+  width: 8.0rem;
+}
+.wh85{
+  display: inline-block;
+  width: 8.5rem;
+}
+.wh90{
+  display: inline-block;
+  width: 9.0rem;
+}
+.wh95{
+  display: inline-block;
+  width: 9.5rem;
+}
+.wh100{
+  display: inline-block;
+  width: 10.0rem;
+}
+.fz06{
+  font-size: 6px;
+}
+.fz08{
+  font-size: 8px;
+}
+.fz10{
+  font-size: 1.0rem;
+}
+.fz12{
+  font-size: 12px;
+}
+.fz14{
+  font-size: 14px;
+}
+.fz16{
+  font-size: 16px;
+}
+.fz18{
+  font-size: 18px;
+}
+.fz18{
+  font-size: 18px;
+}
+.fz18{
+  font-size: 18px;
+}
+.fz20{
+  font-size: 2.0rem;
+}
+.fz22{
+  font-size: 22px;
+}
+.fz24{
+  font-size: 24px;
+}
+.fz26{
+  font-size: 26px;
+}
+.fz28{
+  font-size: 28px;
+}
+.fz30{
+  font-size: 3.0rem;
+}
+.nobg{
+  background: none !important;
+}
+.nobt{
+  border-top: none !important;
+}
+.nobr{
+  border-right: none !important;
+}
+.nobb{
+  border-bottom: none !important;
+}
+.nobl{
+  border-left: none !important;
+}
+.ie-radius{
+  border-radius: .5rem;
+  behavior: url(css/ie-css3.htc);
+}
+
+/*----------customize style----------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+  margin: 0;
+}
+h1{
+  
+}
+h2{
+  
+}
+h3{
+  
+}
+h4{
+  
+}
+h5{
+  
+}
+h6{
+  
+}
+p{
+  
+}
+::-webkit-input-placeholder,
+:-moz-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder{
+  
+}
+input[type="text"]{
+  
+}
+input[type="radio"]{
+  
+}
+input[type="checkbox"]{
+  
+}
+select{
+  
+}
+textarea{
+  
+}
+button{
+  
+}

@@ -1,0 +1,136 @@
+﻿<include file="Index:header" />
+	<body>
+		<!-------------------------------------- 头部开始 -------------------------------------->
+		<header>
+			<div class="container">
+				
+			</div>
+		</header>
+		<!-------------------------------------- 头部结束 -------------------------------------->
+		<!-------------------------------------- 内容开始 -------------------------------------->
+		<main>
+			<div class="container">
+				<div class="ui-userhead">
+					<div class="img">
+						<img src="{$Think.session.headimgurl}" alt="">
+						<p>{$Think.session.nickname} </p>
+					</div>
+					<div class="txt">
+						<div class="coin">
+							<p>拥有环保星星<em id="point">{$point}</em>个</p>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="ui-tabs">
+					<ul>
+						<li><a href="{:U('index/lottery')}" class="i"><i class="ico1"></i>抽奖</a></li>
+						<li><a href="javascript:void(0)" class="i on"><i class="ico2"></i>兑奖</a></li>
+						<div class="clearfix"></div>
+					</ul>
+				</div>
+				<div class="ht05 bg-gray"></div>
+				<div class="ht10"></div>
+				<div class="ui-card">
+					<ul>
+					 <volist name="list" id="vo">
+						<li class="exchange" data-id='{$vo.id}' data-rate='{$vo.rate}'  data-title='{$vo.title}'>
+							<div class="i " style="background-image: url({$vo.pic});  background-size:100% auto;" >
+								<p class="p1">{$vo.title}</p>
+								<p class="p2">需要{$vo.rate}颗环保星星</p>
+							</div>
+						</li>
+					 </volist>	
+						
+						<div class="clearfix"></div>
+					</ul>
+				</div>
+				<div class="ht20"></div>
+				<div class="ui-game">
+					<div class="text">
+						<div class="hd">
+							<p><img src="{:C('STATIC_URL')}Public/home/img/label-l2.png" alt=""></p>
+						</div>
+						<div class="ct">
+							<p>1、每次兑奖会消耗掉规定数量环保星星，耗完即止；</p>
+							<p>2、活动时间2017年7月1日至2018年7月1日；</p>
+							<p>3、奖品领取方式以主办方的具体通知为准；</p>
+							<p>4、本次活动的最终解释权归主办方所有。</p>
+							<p>5、最终中奖礼品可能会在颜色和小细节等部分存在差异，具体以实物为准，奖品数量有限兑完即止。</p>
+						</div>
+					</div>
+				</div>
+				<div class="ht15"></div>
+				<p class="text-center">
+					<a href="{:U('index/index')}" class="bt-1">返回首页</a>
+					<span class="wh10"></span>
+					<a href="javascript:void(0)" onclick="$('.masker, .ui-box-share').show();" class="bt-1">分享好友</a>
+				</p>
+				<!--------------------------------------share-------------------------------------->
+				<div class="masker"></div>				
+				<div class="ui-box-share"><i></i>
+					  <div class="ct">
+						<p class="p1">
+						  点击<img src="{:C('STATIC_URL')}Public/home/img/pic-share1.png" alt="">或<img src="{:C('STATIC_URL')}Public/home/img/pic-share2.png" alt="">
+						  <br>
+						  分享到朋友圈<img src="{:C('STATIC_URL')}Public/home/img/share.png" style="height: 1.6rem;" alt="">
+						</p>
+						<p class="p2">即可获得抽奖机会</p>
+						<p class="p3">
+						  <a onclick="$('.masker, .ui-box-share').hide();" class="ui-btn style2">关闭</a>
+						</p>
+					  </div>
+				</div>
+			</div>
+		</main>
+		<!-------------------------------------- 内容结束 -------------------------------------->
+		<!-------------------------------------- 尾部开始 -------------------------------------->
+		<footer>
+			<div class="container">
+				
+			</div>
+		</footer>
+		<include file="Common/wx_jssdk" />
+		<!-------------------------------------- 尾部开始 -------------------------------------->
+	</body>
+</html>
+<style>
+	
+</style>
+<script>
+	$(function(){
+		$(".exchange").click(function(){
+			var id = $(this).data('id');
+			var rate = $(this).data('rate');
+			var title = $(this).data('title');
+			  layer.open({
+				content: '您确定要兑换'+title+'吗？'
+				,btn: ['确定', '取消']
+				,yes: function(index){
+					var url = "{:U('index/ajaxExchange')}";
+					$.post(url, {prize_id:id}, function(data){
+							console.log(data);
+							if(data.code == 200){ 
+								   $('#point').html(data.point);
+								   layer.open({
+									content: data.msg,
+									btn: '去领取',
+									yes: function(index){
+									   location.href = data.backurl;
+									}
+								  });	
+							}else{
+								layerAlert(data.msg);
+								return false;
+							}
+					 },"json");
+				}
+			  });
+			
+			
+			
+
+		});
+
+	});
+</script>

@@ -1,0 +1,989 @@
+[ 2017-09-18T14:58:21+08:00 ] 127.0.0.1 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000634s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000844s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000890s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043552s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043598s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000624s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000638s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001309s ]
+
+[ 2017-09-18T14:58:25+08:00 ] 127.0.0.1 /admin/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000609s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000658s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000694s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000060s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005693s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005742s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000746s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000539s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001352s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000768s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000799s ]
+
+[ 2017-09-18T14:58:25+08:00 ] 127.0.0.1 /admin/login/createverify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000630s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000739s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000793s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000727s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000795s ]
+
+[ 2017-09-18T14:58:32+08:00 ] 127.0.0.1 /admin/login/createverify/v/0.30981009844490304
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000666s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000962s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001129s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001186s ]
+
+[ 2017-09-18T14:58:35+08:00 ] 127.0.0.1 /admin/login/createverify/v/0.6719487909062472
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000579s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000810s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000845s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000769s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000843s ]
+
+[ 2017-09-18T14:58:42+08:00 ] 127.0.0.1 /admin/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000484s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000760s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000795s ]
+SQL: SHOW COLUMNS FROM `bbs_member` [ RunTime:0.0071s ]
+SQL: SELECT * FROM `bbs_member` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: usermail F:\www\jiedaoban\Application\Admin\Controller\LoginController.class.php 第 19 行.
+NOTIC: [8] Undefined index: userhead F:\www\jiedaoban\Application\Admin\Controller\LoginController.class.php 第 22 行.
+NOTIC: [8] Undefined index: json F:\www\jiedaoban\Application\Common\Common\function.php 第 41 行.
+
+[ 2017-09-18T14:58:43+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000588s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000922s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011291s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011336s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000774s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000968s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001805s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000638s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000669s ]
+
+[ 2017-09-18T14:58:44+08:00 ] 127.0.0.1 /admin/index/home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000463s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000861s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000911s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025091s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025138s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000553s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000537s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001155s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000544s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000577s ]
+
+[ 2017-09-18T14:58:55+08:00 ] 127.0.0.1 /admin/prize/point
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001079s ]
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. F:\www\jiedaoban\Application\Common\Common\function.php 第 8 行.
+SQL: SHOW COLUMNS FROM `bbs_prize` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bbs_prize` WHERE `type` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `bbs_prize` WHERE `type` = 2 ORDER BY `sort` asc,`addtime` desc LIMIT 0,20   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+NOTIC: [8] Undefined index: keyword F:\www\jiedaoban\Application\Runtime\Cache\Admin\1dd45acc681fd0b62f85b12a76f56a55.php 第 26 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009615s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009679s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000611s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001117s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000772s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000820s ]
+
+[ 2017-09-18T14:58:56+08:00 ] 127.0.0.1 /admin/prize/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000564s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000746s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000793s ]
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. F:\www\jiedaoban\Application\Common\Common\function.php 第 8 行.
+SQL: SHOW COLUMNS FROM `bbs_prize` [ RunTime:0.0055s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bbs_prize` WHERE `type` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bbs_prize` WHERE `type` = 1 ORDER BY `sort` asc,`addtime` desc LIMIT 0,20   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+NOTIC: [8] Undefined index: keyword F:\www\jiedaoban\Application\Runtime\Cache\Admin\54672e846cfd9d8e359e8d1a5ea09817.php 第 26 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008128s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008190s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000462s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000534s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001045s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000637s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000675s ]
+
+[ 2017-09-18T14:58:57+08:00 ] 127.0.0.1 /admin/question/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000460s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000747s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000789s ]
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. F:\www\jiedaoban\Application\Common\Common\function.php 第 8 行.
+NOTIC: [8] Undefined variable: condition F:\www\jiedaoban\Application\Admin\Controller\QuestionController.class.php 第 23 行.
+NOTIC: [2] array_filter() expects parameter 1 to be array, null given F:\www\jiedaoban\Application\Admin\Controller\QuestionController.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `bbs_question` [ RunTime:0.0055s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bbs_question` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bbs_question` ORDER BY `sort` asc,`addtime` desc LIMIT 0,20   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+NOTIC: [8] Undefined index: keyword F:\www\jiedaoban\Application\Runtime\Cache\Admin\049ad0fbc4579ec0053f845ee20dffd2.php 第 26 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\049ad0fbc4579ec0053f845ee20dffd2.php 第 32 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\049ad0fbc4579ec0053f845ee20dffd2.php 第 33 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\049ad0fbc4579ec0053f845ee20dffd2.php 第 34 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\049ad0fbc4579ec0053f845ee20dffd2.php 第 35 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\049ad0fbc4579ec0053f845ee20dffd2.php 第 36 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\049ad0fbc4579ec0053f845ee20dffd2.php 第 37 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\049ad0fbc4579ec0053f845ee20dffd2.php 第 38 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\049ad0fbc4579ec0053f845ee20dffd2.php 第 39 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\049ad0fbc4579ec0053f845ee20dffd2.php 第 40 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\049ad0fbc4579ec0053f845ee20dffd2.php 第 41 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\049ad0fbc4579ec0053f845ee20dffd2.php 第 42 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\049ad0fbc4579ec0053f845ee20dffd2.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009805s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009839s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000485s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000608s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001142s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000708s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000750s ]
+
+[ 2017-09-18T15:07:49+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000607s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001074s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009265s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009337s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000645s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000731s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001426s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000882s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000911s ]
+
+[ 2017-09-18T15:07:49+08:00 ] 127.0.0.1 /admin/index/home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000710s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000563s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000605s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006074s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006124s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000431s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000462s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000956s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000556s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000586s ]
+
+[ 2017-09-18T15:07:51+08:00 ] 127.0.0.1 /admin/topic/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000717s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000763s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000833s ]
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. F:\www\jiedaoban\Application\Common\Common\function.php 第 8 行.
+NOTIC: [8] Undefined variable: condition F:\www\jiedaoban\Application\Admin\Controller\TopicController.class.php 第 23 行.
+NOTIC: [2] array_filter() expects parameter 1 to be array, null given F:\www\jiedaoban\Application\Admin\Controller\TopicController.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `bbs_topic` [ RunTime:0.0057s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bbs_topic` LIMIT 1   [ RunTime:0.0003s ]
+ERR: 1054:Unknown column 'sort' in 'order clause'
+ [ SQL语句 ] : SELECT * FROM `bbs_topic` ORDER BY `sort` asc,`addtime` desc LIMIT 0,20  
+ERR: 1054:Unknown column 'sort' in 'order clause'
+ [ SQL语句 ] : SELECT * FROM `bbs_topic` ORDER BY `sort` asc,`addtime` desc LIMIT 0,20  
+
+[ 2017-09-18T15:09:53+08:00 ] 127.0.0.1 /admin/topic/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000564s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000893s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000932s ]
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. F:\www\jiedaoban\Application\Common\Common\function.php 第 8 行.
+NOTIC: [8] Undefined variable: condition F:\www\jiedaoban\Application\Admin\Controller\TopicController.class.php 第 23 行.
+NOTIC: [2] array_filter() expects parameter 1 to be array, null given F:\www\jiedaoban\Application\Admin\Controller\TopicController.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `bbs_topic` [ RunTime:0.0055s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bbs_topic` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bbs_topic` ORDER BY `addtime` desc LIMIT 0,20   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+NOTIC: [8] Undefined index: keyword F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 26 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 32 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 33 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 34 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 35 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 36 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 37 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 38 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 39 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 40 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 41 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 42 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010226s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010263s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000727s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000666s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001444s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000768s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000800s ]
+
+[ 2017-09-18T15:09:54+08:00 ] 127.0.0.1 /admin/topic/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000703s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000752s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000791s ]
+NOTIC: [8] Use of undefined constant intval - assumed 'intval' F:\www\jiedaoban\Application\Admin\Controller\TopicController.class.php 第 47 行.
+NOTIC: [8] Undefined variable: info F:\www\jiedaoban\Application\Admin\Controller\TopicController.class.php 第 82 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008603s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008639s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000594s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001079s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000568s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000605s ]
+
+[ 2017-09-18T15:12:26+08:00 ] 127.0.0.1 /admin/topic/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000462s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000797s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000845s ]
+NOTIC: [8] Use of undefined constant intval - assumed 'intval' F:\www\jiedaoban\Application\Admin\Controller\TopicController.class.php 第 47 行.
+SQL: SHOW COLUMNS FROM `bbs_topic` [ RunTime:0.0359s ]
+NOTIC: [8] Undefined index: validate F:\www\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto F:\www\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `bbs_topic` (`id`,`month`,`title`,`addtime`) VALUES ('0','9','文明养犬','1505718745') [ RunTime:0.0356s ]
+NOTIC: [8] Undefined index: json F:\www\jiedaoban\Application\Common\Common\function.php 第 41 行.
+
+[ 2017-09-18T15:12:28+08:00 ] 127.0.0.1 /admin/topic/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000610s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001085s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001150s ]
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. F:\www\jiedaoban\Application\Common\Common\function.php 第 8 行.
+NOTIC: [8] Undefined variable: condition F:\www\jiedaoban\Application\Admin\Controller\TopicController.class.php 第 23 行.
+NOTIC: [2] array_filter() expects parameter 1 to be array, null given F:\www\jiedaoban\Application\Admin\Controller\TopicController.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `bbs_topic` [ RunTime:0.0055s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bbs_topic` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bbs_topic` ORDER BY `addtime` desc LIMIT 0,20   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+NOTIC: [8] Undefined index: keyword F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 26 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 32 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 33 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 34 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 35 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 36 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 37 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 38 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 39 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 40 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 41 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 42 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 43 行.
+NOTIC: [8] Undefined index: content F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 67 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009282s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009316s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000453s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000613s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001115s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000576s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000621s ]
+
+[ 2017-09-18T15:12:36+08:00 ] 127.0.0.1 /admin/topic/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000513s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000760s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000801s ]
+NOTIC: [8] Use of undefined constant intval - assumed 'intval' F:\www\jiedaoban\Application\Admin\Controller\TopicController.class.php 第 47 行.
+NOTIC: [8] Undefined variable: info F:\www\jiedaoban\Application\Admin\Controller\TopicController.class.php 第 82 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007573s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007608s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000392s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000876s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001338s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000558s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000589s ]
+
+[ 2017-09-18T15:14:45+08:00 ] 127.0.0.1 /admin/topic/add/id/1/act/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000683s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000920s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+NOTIC: [8] Use of undefined constant intval - assumed 'intval' F:\www\jiedaoban\Application\Admin\Controller\TopicController.class.php 第 47 行.
+SQL: SHOW COLUMNS FROM `bbs_topic` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `bbs_topic` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008702s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008740s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000602s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000628s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001282s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000738s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000766s ]
+
+[ 2017-09-18T15:14:52+08:00 ] 127.0.0.1 /admin/topic/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000538s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000781s ]
+NOTIC: [8] Use of undefined constant intval - assumed 'intval' F:\www\jiedaoban\Application\Admin\Controller\TopicController.class.php 第 47 行.
+SQL: SHOW COLUMNS FROM `bbs_topic` [ RunTime:0.0056s ]
+NOTIC: [8] Undefined index: validate F:\www\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto F:\www\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `bbs_topic` SET `month`='9',`title`='文明养犬',`content`='美丽坪山城市管理主题月月更新，每期都有丰厚的礼品送出。你养犬了吗？你知道文明养犬的知识吗？完成答题并留下联系方式，就能参加大转盘抽奖，获得话费、流量、电影票等奖品。',`addtime`='1505718891' WHERE `id` = 1 [ RunTime:0.0485s ]
+NOTIC: [8] Undefined index: json F:\www\jiedaoban\Application\Common\Common\function.php 第 41 行.
+
+[ 2017-09-18T15:14:54+08:00 ] 127.0.0.1 /admin/topic/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000526s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000722s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000760s ]
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. F:\www\jiedaoban\Application\Common\Common\function.php 第 8 行.
+NOTIC: [8] Undefined variable: condition F:\www\jiedaoban\Application\Admin\Controller\TopicController.class.php 第 23 行.
+NOTIC: [2] array_filter() expects parameter 1 to be array, null given F:\www\jiedaoban\Application\Admin\Controller\TopicController.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `bbs_topic` [ RunTime:0.0054s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bbs_topic` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bbs_topic` ORDER BY `addtime` desc LIMIT 0,20   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+NOTIC: [8] Undefined index: keyword F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 26 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 32 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 33 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 34 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 35 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 36 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 37 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 38 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 39 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 40 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 41 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 42 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009471s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009507s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000421s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000511s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000990s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000516s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000545s ]
+
+[ 2017-09-18T15:15:25+08:00 ] 127.0.0.1 /admin/question/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000475s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001200s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001240s ]
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. F:\www\jiedaoban\Application\Common\Common\function.php 第 8 行.
+NOTIC: [8] Undefined variable: condition F:\www\jiedaoban\Application\Admin\Controller\QuestionController.class.php 第 23 行.
+NOTIC: [2] array_filter() expects parameter 1 to be array, null given F:\www\jiedaoban\Application\Admin\Controller\QuestionController.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `bbs_question` [ RunTime:0.0058s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bbs_question` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `bbs_question` ORDER BY `sort` asc,`addtime` desc LIMIT 0,20   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+NOTIC: [8] Undefined index: keyword F:\www\jiedaoban\Application\Runtime\Cache\Admin\049ad0fbc4579ec0053f845ee20dffd2.php 第 26 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\049ad0fbc4579ec0053f845ee20dffd2.php 第 32 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\049ad0fbc4579ec0053f845ee20dffd2.php 第 33 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\049ad0fbc4579ec0053f845ee20dffd2.php 第 34 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\049ad0fbc4579ec0053f845ee20dffd2.php 第 35 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\049ad0fbc4579ec0053f845ee20dffd2.php 第 36 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\049ad0fbc4579ec0053f845ee20dffd2.php 第 37 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\049ad0fbc4579ec0053f845ee20dffd2.php 第 38 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\049ad0fbc4579ec0053f845ee20dffd2.php 第 39 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\049ad0fbc4579ec0053f845ee20dffd2.php 第 40 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\049ad0fbc4579ec0053f845ee20dffd2.php 第 41 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\049ad0fbc4579ec0053f845ee20dffd2.php 第 42 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\049ad0fbc4579ec0053f845ee20dffd2.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011838s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000505s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000554s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001104s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000690s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000725s ]
+
+[ 2017-09-18T15:15:26+08:00 ] 127.0.0.1 /admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000549s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000971s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007876s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007914s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000548s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001062s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000597s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000628s ]
+
+[ 2017-09-18T15:15:26+08:00 ] 127.0.0.1 /admin/index/home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000688s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000859s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000909s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007058s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007133s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000672s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001222s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000609s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000640s ]
+
+[ 2017-09-18T15:15:29+08:00 ] 127.0.0.1 /admin/topic/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000546s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000838s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000876s ]
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. F:\www\jiedaoban\Application\Common\Common\function.php 第 8 行.
+NOTIC: [8] Undefined variable: condition F:\www\jiedaoban\Application\Admin\Controller\TopicController.class.php 第 23 行.
+NOTIC: [2] array_filter() expects parameter 1 to be array, null given F:\www\jiedaoban\Application\Admin\Controller\TopicController.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `bbs_topic` [ RunTime:0.0061s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bbs_topic` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bbs_topic` ORDER BY `addtime` desc LIMIT 0,20   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+NOTIC: [8] Undefined index: keyword F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 26 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 32 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 33 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 34 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 35 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 36 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 37 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 38 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 39 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 40 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 41 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 42 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009127s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009162s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000726s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001248s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000586s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000631s ]
+
+[ 2017-09-18T15:16:06+08:00 ] 127.0.0.1 /admin/topic/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000523s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000879s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000919s ]
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. F:\www\jiedaoban\Application\Common\Common\function.php 第 8 行.
+NOTIC: [8] Undefined variable: condition F:\www\jiedaoban\Application\Admin\Controller\TopicController.class.php 第 23 行.
+NOTIC: [2] array_filter() expects parameter 1 to be array, null given F:\www\jiedaoban\Application\Admin\Controller\TopicController.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `bbs_topic` [ RunTime:0.0056s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bbs_topic` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bbs_topic` ORDER BY `addtime` desc LIMIT 0,20   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+NOTIC: [8] Undefined index: keyword F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 26 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 32 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 33 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 34 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 35 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 36 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 37 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 38 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 39 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 40 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 41 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 42 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009905s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009939s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000562s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000580s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001191s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000883s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000915s ]
+
+[ 2017-09-18T15:17:01+08:00 ] 127.0.0.1 /admin/topic/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000456s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000971s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001037s ]
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. F:\www\jiedaoban\Application\Common\Common\function.php 第 8 行.
+NOTIC: [8] Undefined variable: condition F:\www\jiedaoban\Application\Admin\Controller\TopicController.class.php 第 23 行.
+NOTIC: [2] array_filter() expects parameter 1 to be array, null given F:\www\jiedaoban\Application\Admin\Controller\TopicController.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `bbs_topic` [ RunTime:0.0056s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bbs_topic` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bbs_topic` ORDER BY `addtime` desc LIMIT 0,20   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+NOTIC: [8] Undefined index: keyword F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 26 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 32 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 33 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 34 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 35 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 36 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 37 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 38 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 39 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 40 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 41 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 42 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009505s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009539s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000445s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000501s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000994s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000540s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000568s ]
+
+[ 2017-09-18T15:25:53+08:00 ] 127.0.0.1 /admin/topic/add/id/1/act/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000517s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000790s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000827s ]
+NOTIC: [8] Use of undefined constant intval - assumed 'intval' F:\www\jiedaoban\Application\Admin\Controller\TopicController.class.php 第 47 行.
+SQL: SHOW COLUMNS FROM `bbs_topic` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `bbs_topic` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008344s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008401s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000592s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001089s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000601s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000632s ]
+
+[ 2017-09-18T15:25:56+08:00 ] 127.0.0.1 /admin/topic/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000588s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001970s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002037s ]
+NOTIC: [8] Use of undefined constant intval - assumed 'intval' F:\www\jiedaoban\Application\Admin\Controller\TopicController.class.php 第 47 行.
+SQL: SHOW COLUMNS FROM `bbs_topic` [ RunTime:0.0054s ]
+NOTIC: [8] Undefined index: validate F:\www\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto F:\www\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `bbs_topic` SET `month`='9',`title`='文明养犬1',`content`='美丽坪山城市管理主题月月更新，每期都有丰厚的礼品送出。你养犬了吗？你知道文明养犬的知识吗？完成答题并留下联系方式，就能参加大转盘抽奖，获得话费、流量、电影票等奖品。 ',`addtime`='1505719555' WHERE `id` = 1 [ RunTime:0.0556s ]
+NOTIC: [8] Undefined index: json F:\www\jiedaoban\Application\Common\Common\function.php 第 41 行.
+
+[ 2017-09-18T15:25:59+08:00 ] 127.0.0.1 /admin/topic/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000773s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001124s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001186s ]
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. F:\www\jiedaoban\Application\Common\Common\function.php 第 8 行.
+NOTIC: [8] Undefined variable: condition F:\www\jiedaoban\Application\Admin\Controller\TopicController.class.php 第 23 行.
+NOTIC: [2] array_filter() expects parameter 1 to be array, null given F:\www\jiedaoban\Application\Admin\Controller\TopicController.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `bbs_topic` [ RunTime:0.0057s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bbs_topic` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bbs_topic` ORDER BY `addtime` desc LIMIT 0,20   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+NOTIC: [8] Undefined index: keyword F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 26 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 32 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 33 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 34 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 35 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 36 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 37 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 38 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 39 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 40 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 41 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 42 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009914s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009948s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000533s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000979s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000511s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000539s ]
+
+[ 2017-09-18T15:26:05+08:00 ] 127.0.0.1 /admin/topic/add/id/1/act/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000463s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000753s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000787s ]
+NOTIC: [8] Use of undefined constant intval - assumed 'intval' F:\www\jiedaoban\Application\Admin\Controller\TopicController.class.php 第 47 行.
+SQL: SHOW COLUMNS FROM `bbs_topic` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `bbs_topic` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007987s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008024s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000515s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001015s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000573s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000601s ]
+
+[ 2017-09-18T15:26:09+08:00 ] 127.0.0.1 /admin/topic/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000543s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001372s ]
+NOTIC: [8] Use of undefined constant intval - assumed 'intval' F:\www\jiedaoban\Application\Admin\Controller\TopicController.class.php 第 47 行.
+SQL: SHOW COLUMNS FROM `bbs_topic` [ RunTime:0.0055s ]
+NOTIC: [8] Undefined index: validate F:\www\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto F:\www\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `bbs_topic` SET `month`='9',`title`='文明养犬',`content`='美丽坪山城市管理主题月月更新，每期都有丰厚的礼品送出。你养犬了吗？你知道文明养犬的知识吗？完成答题并留下联系方式，就能参加大转盘抽奖，获得话费、流量、电影票等奖品。  ',`addtime`='1505719568' WHERE `id` = 1 [ RunTime:0.0467s ]
+NOTIC: [8] Undefined index: json F:\www\jiedaoban\Application\Common\Common\function.php 第 41 行.
+
+[ 2017-09-18T15:26:11+08:00 ] 127.0.0.1 /admin/topic/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000461s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000751s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000788s ]
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. F:\www\jiedaoban\Application\Common\Common\function.php 第 8 行.
+NOTIC: [8] Undefined variable: condition F:\www\jiedaoban\Application\Admin\Controller\TopicController.class.php 第 23 行.
+NOTIC: [2] array_filter() expects parameter 1 to be array, null given F:\www\jiedaoban\Application\Admin\Controller\TopicController.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `bbs_topic` [ RunTime:0.0058s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bbs_topic` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bbs_topic` ORDER BY `addtime` desc LIMIT 0,20   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+NOTIC: [8] Undefined index: keyword F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 26 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 32 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 33 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 34 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 35 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 36 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 37 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 38 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 39 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 40 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 41 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 42 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\53c7dfdcc1f02a0627bb3774a73a4ec6.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009525s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009561s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000445s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000601s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001096s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000602s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000630s ]
+
+[ 2017-09-18T17:31:53+08:00 ] 127.0.0.1 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000535s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000875s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000911s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008955s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008992s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000577s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000739s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001374s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000982s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001038s ]
+
+[ 2017-09-18T17:31:53+08:00 ] 127.0.0.1 /admin/index/home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000501s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001367s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006597s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006640s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000510s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000981s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000548s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000582s ]
+
+[ 2017-09-18T17:31:59+08:00 ] 127.0.0.1 /admin/award/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000541s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000892s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000956s ]
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. F:\www\jiedaoban\Application\Common\Common\function.php 第 8 行.
+NOTIC: [8] Undefined variable: condition F:\www\jiedaoban\Application\Admin\Controller\AwardController.class.php 第 33 行.
+NOTIC: [2] array_filter() expects parameter 1 to be array, null given F:\www\jiedaoban\Application\Admin\Controller\AwardController.class.php 第 33 行.
+SQL: SHOW COLUMNS FROM `bbs_award` [ RunTime:0.0074s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bbs_award` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `bbs_award` ORDER BY `addtime` desc LIMIT 0,20   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\ade1665f5cb1d058455f0f51e0d2cd97.php 第 25 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\ade1665f5cb1d058455f0f51e0d2cd97.php 第 26 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\ade1665f5cb1d058455f0f51e0d2cd97.php 第 27 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\ade1665f5cb1d058455f0f51e0d2cd97.php 第 28 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\ade1665f5cb1d058455f0f51e0d2cd97.php 第 29 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\ade1665f5cb1d058455f0f51e0d2cd97.php 第 30 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\ade1665f5cb1d058455f0f51e0d2cd97.php 第 31 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\ade1665f5cb1d058455f0f51e0d2cd97.php 第 32 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\ade1665f5cb1d058455f0f51e0d2cd97.php 第 33 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\ade1665f5cb1d058455f0f51e0d2cd97.php 第 34 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\ade1665f5cb1d058455f0f51e0d2cd97.php 第 35 行.
+NOTIC: [8] Undefined index: month F:\www\jiedaoban\Application\Runtime\Cache\Admin\ade1665f5cb1d058455f0f51e0d2cd97.php 第 36 行.
+NOTIC: [8] Undefined index: keyword F:\www\jiedaoban\Application\Runtime\Cache\Admin\ade1665f5cb1d058455f0f51e0d2cd97.php 第 41 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009936s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000506s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000637s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001192s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000636s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000666s ]
+
+[ 2017-09-18T17:32:01+08:00 ] 127.0.0.1 /admin/prize/point
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000528s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000812s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000865s ]
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. F:\www\jiedaoban\Application\Common\Common\function.php 第 8 行.
+SQL: SHOW COLUMNS FROM `bbs_prize` [ RunTime:0.0063s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bbs_prize` WHERE `type` = 2 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `bbs_prize` WHERE `type` = 2 ORDER BY `sort` asc,`addtime` desc LIMIT 0,20   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+NOTIC: [8] Undefined index: keyword F:\www\jiedaoban\Application\Runtime\Cache\Admin\1dd45acc681fd0b62f85b12a76f56a55.php 第 26 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008716s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008750s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000522s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000591s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001160s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000694s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000745s ]
+
+[ 2017-09-18T17:32:07+08:00 ] 127.0.0.1 /admin/prize/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000544s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000834s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000872s ]
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. F:\www\jiedaoban\Application\Common\Common\function.php 第 8 行.
+SQL: SHOW COLUMNS FROM `bbs_prize` [ RunTime:0.0061s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bbs_prize` WHERE `type` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `bbs_prize` WHERE `type` = 1 ORDER BY `sort` asc,`addtime` desc LIMIT 0,20   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+NOTIC: [8] Undefined index: keyword F:\www\jiedaoban\Application\Runtime\Cache\Admin\54672e846cfd9d8e359e8d1a5ea09817.php 第 26 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009024s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009076s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000563s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000867s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001521s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000795s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000835s ]
+

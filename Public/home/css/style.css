@@ -1,0 +1,80 @@
+@font-face{
+  font-family: 迷你简少儿;
+  src: url(../fonts/迷你简少儿.ttf);
+}
+html{
+  font-size: 10px;
+}
+body{
+  font-family: Arial, 苹方, 黑体;
+}
+body:before{
+  content: '';
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  display: none;
+}
+body.on-mask:before{
+  display: block;
+}
+.container{
+	width: 100%;
+	padding: 0;
+	position: relative;
+}
+*::-webkit-input-placeholder{
+  color: #d2cfcf;
+}
+
+/*----------header----------*/
+header{
+  
+}
+
+/*----------main----------*/
+main{
+  
+}
+.bg-gray{
+  background-color: #ececec;
+}
+.bg-gird{
+  background: url(../img/bg-b1.png);
+  background-size: 15rem auto;
+}
+.bg-home{
+  background: url(../img/home-bg.png) no-repeat center;
+  background-size: 100% auto;
+}
+.hr{
+
+}
+.bt-1{
+  display: inline-block;
+  height: 3.5rem;
+  width: 14rem;
+  background: url(../img/bt-btn1.png);
+  background-size: 100% 100%;
+  border-radius: .6rem;
+  line-height: 3.5rem;
+  color: #905802 !important;
+  font-family: Microsoft YaHei;
+  font-size: 1.8rem;
+  padding: 0 2.5rem;
+  text-align: center;
+}
+.bt-1:active{
+  opacity: .8;
+}
+
+/*----------footer----------*/
+footer{
+
+}
+
+/*----------customize----------*/

@@ -1,0 +1,145 @@
+﻿<include file="Index:header" />
+	<body class="bg-login">
+		<!-------------------------------------- 头部开始 -------------------------------------->
+		<header>
+			<div class="container">
+				
+			</div>
+		</header>
+		<!-------------------------------------- 头部结束 -------------------------------------->
+		<!-------------------------------------- 内容开始 -------------------------------------->
+		<main>
+			<div class="container">
+				<div class="ui-login">
+					<div class="hd">
+						<p>中奖用户资料填写</p>
+					</div>
+					<div class="ct">
+						<div class="form">
+							<div class="p">
+								<div class="input"><label for=""><span class="pull-right">名：&nbsp;&nbsp;</span>姓</label>
+									<input type="text" placeholder="李四"  id="name"  value="{$info.name}">
+								</div>
+							</div>
+							<div class="p">
+								<div class="input"><label for="">联系方式：</label>
+									<input type="text" placeholder="手机号码" id="phone" value="{$info.phone}">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="ft">
+						<p><a href="" class="bt-1" id="add">提 交</a></p>
+					</div>
+				</div>
+				<!--------------------------------------share-------------------------------------->
+				<div class="masker"></div>				
+				<div class="ui-box-share"><i></i>
+					  <div class="ct">
+						<p class="p1">
+						  点击<img src="{:C('STATIC_URL')}Public/home/img/pic-share1.png" alt="">或<img src="{:C('STATIC_URL')}Public/home/img/pic-share2.png" alt="">
+						  <br>
+						  分享到朋友圈<img src="{:C('STATIC_URL')}Public/home/img/share.png" style="height: 1.6rem;" alt="">
+						</p>
+						<p class="p2">即可获得抽奖机会</p>
+						<p class="p3">
+						  <a onclick="$('.masker, .ui-box-share').hide();" class="ui-btn style2">关闭</a>
+						</p>
+					  </div>
+				</div>
+			</div>
+		</main>
+		<!-------------------------------------- 内容结束 -------------------------------------->
+	  <div class="ui-abox"  style="display: none;" id="success"><a href=""></a>
+			<div class="cont">
+				<div class="hd">
+					<p>提交成功！</p>
+				</div>
+				<div class="ct">
+					<div class="text">
+						<div class="ct">
+							<div class="ht30"></div>
+							<p><img src="{:C('STATIC_URL')}Public/home/img/abox-ico5.png" alt="" style="height: 8.5rem;"></p>
+							<div class="ht10"></div>
+						</div>
+						<div class="ft">
+							<p><a href="javascript:void(0)" onclick="$('.masker, .ui-box-share').show();" class="bt-1">分享</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			<div class="container">
+				
+			</div>
+		</footer>
+		<include file="Common/wx_jssdk" />
+		<!-------------------------------------- 尾部开始 -------------------------------------->
+	</body>
+</html>
+<style>
+	
+</style>
+	<script>
+$(document).ready(function() { 
+    $('#add').click(function(){ 
+		 // 判断手机号码
+		
+		 // 验证身份证
+		 var name = $('#name').val();	
+		 if($.trim(name).length == 0) { 
+		  msg = '请输入姓名\n';
+		  $('#name').focus();
+			layerAlert(msg);
+			return false;
+		 } 
+		 
+		
+		
+		 var phone = $('#phone').val();	
+		 if ($.trim(phone).length == 0) { 
+		  	msg ='请输入手机号码\n';
+		  	$('#phone').focus();
+			layerAlert(msg);
+			return false;
+		 }
+		if(isPhoneNo(phone) == false) {
+		   msg = '手机号码不正确\n';
+		   $('#phone').focus();
+			layerAlert(msg);
+			return false;
+		 }
+
+		 
+		
+		var id = {$Think.get.id};	
+		
+		var url = "{:U('index/ajaxAward')}";
+		$.post(url, {phone:phone,id:id,name:name}, function(data){
+				console.log(data);
+				//return false;
+				
+				if(data.code == 200){ 
+					$("body").addClass('on-mask');					
+					$('#success').show();		
+					//layerAlert(data.msg);
+					//location.reload();
+				}else{
+					layerAlert(data.msg);
+					return false;
+				}
+		 },"json");
+		return false;		
+	})
+  })
+
+   // 验证手机号
+function isPhoneNo(phone) { 
+ var pattern = /^1[34578]\d{9}$/; 
+ return pattern.test(phone); 
+}
+ 
+
+</script>

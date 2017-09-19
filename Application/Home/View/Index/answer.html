@@ -1,0 +1,96 @@
+﻿<include file="Index:header" />
+	<body class="bg-gird">
+		<!-------------------------------------- 头部开始 -------------------------------------->
+		<header>
+			<div class="container">
+				
+			</div>
+		</header>
+		<!-------------------------------------- 头部结束 -------------------------------------->
+		<!-------------------------------------- 内容开始 -------------------------------------->
+		<main>
+			<div class="container">
+				<div class="ui-head">
+					<p>
+						<img src="{:C('STATIC_URL')}Public/home/img/logo.png" alt="" class="logo">
+					</p>
+				</div>
+				<div class="ht35"></div>
+				
+				<div class="ui-result">
+					<div class="hd">
+						<p>{$answerInfo.msg}</p>
+					</div>
+					<div class="ct">
+						<p>
+							<if condition="$answerInfo.is_right eq 2"><b>你的答案：</b>{$answerArr[$answerInfo['answer']]}<br></if>
+							<b><em>正确答案：</em></b><em>{$answerArr[$answerInfo['right_answer']]}</em><br>
+							<b>答案解析：</b>【你知道吗】{$answerInfo.knowledge}<br>
+						</p>
+					</div>
+				</div>
+				<notempty name="rightCount">
+				<div class="ui-gain">
+					<div class="hd">
+						<p>恭喜你已完成了所有答题，堪称答题小能手！</p>
+					</div>
+					<div class="ct">
+						<p>
+							本轮答题你一共答对 <b class="color1">{$rightCount}</b> 题，答错 <b class="color2">{:10-$rightCount}</b> 题<br>
+							本次获得环保星星 <img src="{:C('STATIC_URL')}Public/home/img/coin-l1.png" alt=""> {$rightCount} 颗，累计收获{$point}颗环保星星。
+						</p>
+					</div>
+					<div class="ft">
+						<h3><img src="{:C('STATIC_URL')}Public/home/img/icon-faq.png" alt="">环保星星怎么用？</h3>
+						<p>消耗3个环保星星可抽奖1次，攒足20个环保星星可兑换奖品。</p>
+					</div>
+				</div>
+				<div class="ht20"></div>
+				<p class="text-center">
+					<a href="{:U('index/lottery')}" class="bt-1">我要抽奖</a>
+					<span class="wh15"></span>
+					<a href="{:U('index/exchange')}" class="bt-1">兑换礼品</a>
+				</p>
+				<div class="ht20"></div>
+				<else />
+					<div class="ht20"></div>
+					<p class="text-center">
+					<a href="javascript:void(0)" class="bt-1" id="start_q">下一题</a>
+				</p>
+				<div class="ht20"></div>
+				</notempty>
+			</div>
+		</main>
+		<!-------------------------------------- 内容结束 -------------------------------------->
+		<!-------------------------------------- 尾部开始 -------------------------------------->
+		<footer>
+			<div class="container">
+				
+			</div>
+		</footer>
+		<include file="Common/wx_jssdk" />
+		<!-------------------------------------- 尾部开始 -------------------------------------->
+	</body>
+</html>
+<style>
+	
+</style>
+<script>
+	$(function(){
+		
+		$("#start_q").click(function(){
+			var month = {$answerInfo.month};
+			var url = "{:U('index/ajaxquestion')}";
+			$.post(url, {month:month}, function(data){
+					console.log(data);
+					if(data.code == 200){     
+						location.href = data.backurl;
+					}else{
+						layerAlert(data.msg);
+						return false;
+					}
+			 },"json");
+
+		});
+	});
+</script>

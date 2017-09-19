@@ -1,0 +1,90 @@
+<include file="Index:header" />
+<body>
+<div class="fly-panel fly-panel-user">
+<div class="tpt—admin">
+<form class="layui-form">
+
+  <div class="layui-form-item">
+    <label class="layui-form-label">标题</label>
+    <div class="layui-input-block">
+      <input type="text" name="title" value="{$shareInfo['title']}" required lay-verify="required" placeholder="请输入内容" autocomplete="off" class="layui-input">
+    </div>
+  </div>
+  <div class="layui-form-item">
+    <label class="layui-form-label">描述</label>
+    <div class="layui-input-block">
+      <input type="text" name="desc" value="{$shareInfo['desc']}" required lay-verify="required" placeholder="请输入描述" autocomplete="off" class="layui-input">
+    </div>
+  </div>
+  
+
+
+  <div class="layui-form-item">
+    <label class="layui-form-label">图片</label>
+    <div class="layui-input-block">
+		<notempty name="shareInfo.pic">
+		  <img src="{$shareInfo.pic}"  width="100" id="showpic" >
+		<else/>
+		    <img src=""  width="100" id="showpic" style="display:none;">
+		</notempty>
+	  <input type="file" name="file" class="layui-upload-file" id="image" style="float: left;">
+	  <input type="hidden" name="pic" value="{$shareInfo.pic}">
+    </div>
+  </div>
+
+  
+  <div class="layui-form-item">
+    <div class="layui-input-block">
+	  <button class="layui-btn" lay-submit="" lay-filter="submit_add">立即提交</button>
+    </div>
+  </div>
+
+</form>
+<script>
+layui.use(['form', 'upload'],function(){
+  var form = layui.form()
+  ,jq = layui.jquery;
+  
+  layui.upload({
+    url: '{:U("Action/upload")}'
+    ,elem:'#image'
+    ,before: function(input){
+      loading = layer.load(2, {
+        shade: [0.2,'#000']
+      });
+    }
+    ,success: function(res){
+      layer.close(loading);
+	  var picurl = '/upload/'+res.path;
+      jq('input[name=pic]').val(picurl);
+	  $('#showpic').attr('src',picurl).show();
+      layer.msg(res.msg, {icon: 1, time: 1000});
+    }
+  }); 
+  
+  form.on('submit(submit_add)', function(data){
+    loading = layer.load(2, {
+      shade: [0.2,'#000']
+    });
+    var param = data.field;
+    jq.post('{:U("Config/share")}',param,function(data){
+      if(data.code == 200){
+        layer.close(loading);
+        layer.msg(data.msg, {icon: 1, time: 1000}, function(){
+          //location.href = data.backurl;
+        });
+      }else{
+        layer.close(loading);
+        layer.msg(data.msg, {icon: 2, anim: 6, time: 1000});
+      }
+    });
+    return false;
+  });
+
+})
+</script>
+</div>
+</div>
+<include file="Index:footer" />
+</body>
+</html>

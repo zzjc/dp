@@ -1,0 +1,76 @@
+﻿<include file="Index:header" />
+	<body>
+		<!-------------------------------------- 头部开始 -------------------------------------->
+		<header>
+			<div class="container">
+				
+			</div>
+		</header>
+		<!-------------------------------------- 头部结束 -------------------------------------->
+		<!-------------------------------------- 内容开始 -------------------------------------->
+		<main>
+			<div class="container">
+				<div class="ui-userhead">
+					<div class="img">
+						<img src="{$Think.session.headimgurl}" alt="">
+						<p>{$Think.session.nickname} </p>
+					</div>
+					<div class="txt">
+						<div class="coin">
+							<p>拥有环保星星<em>{$point}</em>个</p>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="ui-txt1">
+					<div class="hd">
+						<p class="p1">关爱坪山，你我共同守护！</p>
+						<div class="ht10"></div>
+						<p class="p2"><img src="{:C('STATIC_URL')}Public/home/img/label-l3.png" alt=""></p>
+					</div>
+					<div class="ct">
+						<p>关于城市管理，你知多少？参与“人人都是城市美容师”互动闯关答题游戏，为创建美丽坪山街道添砖加瓦。完成答题赢取城市守卫者勋章，答对一题获得一枚勋章，使用勋章可以参与抽奖和兑奖活动。奖品丰厚，中奖率高哦！</p>
+					</div>
+				</div>
+				<div class="ht10"></div>
+				<div class="ui-card">
+					<ul>
+						<volist name="list" id="vo">
+						<li class="exchange" data-id='{$vo.id}' data-rate='{$vo.rate}'  data-title='{$vo.title}'>
+							<div class="i " style="background-image: url({$vo.pic});  background-size:100% auto;" >
+								<p class="p1">{$vo.title}</p>
+								<p class="p2">需要{$vo.rate}颗环保星星</p>
+							</div>
+						</li>
+					 </volist>	
+						<div class="clearfix"></div>
+					</ul>
+				</div>
+				<div class="ht10"></div>
+				<p class="text-center">
+					<a href="{:U("index/start",array('month'=>$month))}" class="bt-1">答题赢礼品</a>
+				</p>
+			</div>
+		</main>
+		<!-------------------------------------- 内容结束 -------------------------------------->
+		<!-------------------------------------- 尾部开始 -------------------------------------->
+		<footer>
+			<div class="container">
+				
+			</div>
+		</footer>
+		<!-------------------------------------- 尾部开始 -------------------------------------->
+	</body>
+</html>
+<style>
+	
+</style>
+<script>
+	$(function(){
+		$(".exchange").click(function(){
+			var url = "{:U("index/exchange")}";
+			location.href = url;
+		});
+
+	});
+</script>
